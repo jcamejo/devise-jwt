@@ -89,7 +89,7 @@ def jwt_payload
 end
 ```
 
-You can add a hook method `on_jwt_dispatch` on the user model. It is executed when a token dispatched for that user instance, and it takes `token` and `payload` as parameters.
+You can add a hook method `on_jwt_dispatch` on the user model. It is executed when a token is dispatched for that user instance, and it takes `token` and `payload` as parameters.
 
 ```ruby
 def on_jwt_dispatch(token, payload)
